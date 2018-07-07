@@ -1,0 +1,57 @@
+
+.body {
+
+}
+
+.header__main-heading {
+    font-weight: 300;
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--top {
+      font-size: 6rem;
+      letter-spacing: 3rem;
+      display: block;
+      text-transform: uppercase;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    &--sub {
+      display: block;
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary, $color-secondary);
+    display: inline-block;
+    -webkit-background-clip: text; //clip background to be only behind the text
+    color: transparent; // to see the background through
+    letter-spacing: 2px;
+    text-shadow: .5rem 1rem 2rem rgba(black, .2);
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .paragraph {
+    font-size: $default-font-size;
+    line-height: 3rem;
+    color: $color-text;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
