@@ -10,7 +10,7 @@
   @include media(tablet-port) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    height: 55vh;
+    height: 75vh;
   }
 
   @include media(phone) {
