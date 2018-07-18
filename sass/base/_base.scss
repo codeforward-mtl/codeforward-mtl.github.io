@@ -6,6 +6,22 @@
 
 html {
   font-size: 62.5%;
+
+  @include media(tablet-land) {
+    font-size: 55%;
+  }
+
+  @include media(tablet-port) {
+    font-size: 50%;
+  }
+
+  @include media(phone) {
+    font-size: 45%;
+  }
+  
+  @include media(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -15,4 +31,7 @@ body {
   color: $color-text;
   padding: 3rem;
   box-sizing: border-box;
+  @include media(tablet-port) {
+    padding: 0;
+  }
 }

@@ -1,6 +1,90 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 30rem 0;
-  margin-top: -30vh;
+  margin-top: -35vh;
+
+  @include media(tablet-port) {
+    padding: 30rem 0 20rem 0;
+    margin-top: -20vh;
+  }
+
+  @include media(phone) {
+    padding: 20rem 0;
+  }
 }
 
+.section-features {
+  padding: 20rem 0;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba($color-primary, .7) , rgba($color-primary-dark, .7)), url(../images/space.jpg);
+  background-size: cover;
+  position: relative;
+  margin-top: -15rem;
+  transform: skewY(-7deg);
+
+  & > * { // all direct children
+    transform: skewY(7deg);
+  }
+
+  @include media(tablet-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 30rem 0 10rem 0;
+  margin-top: -10rem;
+
+  @include media(tablet-port) {
+    padding: 20rem 0 5rem 0;
+  }
+}
+
+.section-stories {
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+}
+
+.contact {
+  background-image: linear-gradient(100deg,
+                                     rgba(white, .8) 0%,
+                                     rgba(white, .8) 50%,
+                                     transparent 50%),
+                    url('../images/dinosaur.jpeg');
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(black, .25);
+  @include media(tablet-land) {
+    background-image: linear-gradient(100deg,
+    rgba(white, .8) 0%,
+    rgba(white, .8) 65%,
+    transparent 65%),
+url('../images/dinosaur.jpeg');
+  }
+
+  @include media(tablet-port) {
+    background-image: linear-gradient(to right,
+    rgba(white, .8) 0%,
+    rgba(white, .8) 100%)
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    @include media(tablet-land) {
+      width: 65%;
+    }
+
+    @include media(tablet-port) {
+      width: 100%;
+    }
+
+  }
+}

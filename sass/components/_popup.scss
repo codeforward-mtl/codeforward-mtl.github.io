@@ -1,0 +1,148 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(black, .75);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .3);
+    display: table;
+    opacity: 0;
+    transition: all .6s .2s; //.2s delay
+
+
+  }
+
+  &__left {
+    width: 38%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__right {
+    width: 62%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    @include media(tablet-port) {
+      column-count: 1;
+    }
+  }
+
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-text;
+      position: absolute;
+      top: 2.5rem;
+      right: 3.5rem;
+      display: inline-block;
+      font-size: 3rem;
+      text-decoration: none;
+      line-height: 1;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+
+  }
+
+  @include media(tablet-port) {
+  
+  
+    &__content {
+      display: inline-block;
+    }
+  
+    &__left {
+      width: 100%;
+      display: inline-block;
+    }
+  
+    &__right {
+      width: 100%;
+      display: inline-block;
+      padding: 3rem 5rem;
+  
+    }
+  
+    &__img {
+      display: block;
+      width: 50%;
+      float: left;
+    }
+  
+    &__text {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+      column-count: 2;
+      column-gap: 4rem;
+      column-rule: 1px solid #eee;
+      @include media(tablet-port) {
+        column-count: 1;
+      }
+    }
+  
+  
+    &:target &__content {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  
+    &__close {
+      &:link,
+      &:visited {
+        color: $color-text;
+        position: absolute;
+        top: 2.5rem;
+        right: 3.5rem;
+        display: inline-block;
+        font-size: 3rem;
+        text-decoration: none;
+        line-height: 1;
+      }
+      &:hover {
+        color: $color-primary;
+      }
+  
+    } 
+  }
+}

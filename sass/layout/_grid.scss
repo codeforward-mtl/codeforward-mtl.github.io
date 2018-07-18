@@ -4,7 +4,13 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
-
+    @include media(tablet-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+  @include media(tablet-port) {
+    max-width: 70rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -13,6 +19,12 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+    }
+
+    @include media(tablet-port) {
+      width: 100% !important;
+      margin-right: 0;
+      margin-bottom: $gutter-vertical-small;
     }
   }
 

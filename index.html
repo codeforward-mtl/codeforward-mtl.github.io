@@ -8,20 +8,52 @@
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
         <title>My website!</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+
+            <div class="navigation__background">&nbsp</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link">About Me</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#travel" class="navigation__link">Travel to Space</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#robots" class="navigation__link">Buy Robots</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#stories" class="navigation__link">Stories</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact" class="navigation__link">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="images/login-w-icon.png" alt="logo" class="header__logo">
             </div>
             <div class="header__text">
                 <h1 class="header__main-heading">
-                <span class="header__main-heading--top">website</span>
+                <span class="header__main-heading--top">this website</span>
                 <span class="header__main-heading--sub">is really awesome</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Click me!</a>
+                <a href="#robots" class="btn btn--white btn--animated">Click me!</a>
             </div>
         </header>
 
@@ -58,19 +90,19 @@
         </section>
     -->
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-text u-margin-bottom-large">
             <h2 class="heading-secondary">About me</h2>
             </div>
            
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">My best ideas</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">I am a cat!</h3>
                     <p class="paragraph">
                         Scratch. Cough furball leave fur on owners clothes and lick yarn hanging out of own butt. Eat a plant, kill a hand chase red laser dot, pose purrfectly to show my beauty attack feet. Cough cat mojo yet please stop looking at your phone and pet me so mesmerizing birds meow for food, then when human fills food dish, take a few bites of food and continue meowing lies down . 
                     </p>
         
-                    <h3 class="heading-tertiary u-margin-bottom-small">My life</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Meow meow!!</h3>
                     <p class="paragraph">
                         Pet me pet me don't pet me plop down in the middle where everybody walks throwup on your pillow hit you unexpectedly. Cat fur is the new black paw at beetle and eat it before it gets away yet woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now, toilet paper attack claws fluff everywhere. 
                     </p>
@@ -87,8 +119,307 @@
             </div>
             
         </section>
+        <section class="section-features" id="travel">
+
+            <!--<i class="far fa-map"></i>    -->
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-space-shuttle"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Explore space!</h3>
+                        <p class="feature-box__text">
+                            Would you censor the Venus de Venus just because you can see her spewers? Really?! Oh, but you can. But you may have to metaphorically make a deal with the devil. And by "devil", I mean Robot Devil. And by "metaphorically", I mean get your coat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-user-astronaut"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Become an astronaut</h3>
+                        <p class="feature-box__text">
+                            Leela, Bender, we're going grave robbing. Uh, is the puppy mechanical in any way? Good news, everyone! There's a report on TV with some very bad news! Doomsday device? Ah, now the ball's in Farnsworth's court! 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-star"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Get lost among the stars</h3>
+                        <p class="feature-box__text">
+                            Do a flip! I am Singing Wind, Chief of the Martians. There's no part of that sentence I didn't like! Have you ever tried just turning off the TV, sitting down with your children, and hitting them? But I know you in the future. I cleaned your poop.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-moon"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">To the moon!</h3>
+                        <p class="feature-box__text">
+                            But I've never been to the moon! Who's brave enough to fly into something we all keep calling a death sphere? Bender, you risked your life to save me! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="robots">
+            <div class="u-center-text u-margin-bottom-large">
+                <h2 class="heading-secondary">Best robots ever</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                WALL-E
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul class="--1">
+                                    <li>Cute!</li>
+                                    <li>Very useful</li>
+                                    <li>Energy: solar powered</li>
+                                    <li>Color: yellow</li>
+                                    <li>Durability: extremely good!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">only</p>
+                                    <p class="card__price-value">500$</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Buy Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">
+                                    R2-D2
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Also cute!</li>
+                                        <li>Very loyal</li>
+                                        <li>Energy: ????</li>
+                                        <li>Color: white and blue</li>
+                                        <li>Durability: great!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">only</p>
+                                        <p class="card__price-value">1,000$</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Buy Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                Mimi
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Unique look</li>
+                                    <li>Full of potential</li>
+                                    <li>Energy: AA batteries</li>
+                                    <li>Color: grey white and red</li>
+                                    <li>Durability: TBD</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">only</p>
+                                    <p class="card__price-value">400$</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Buy Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-bottom-large">
+                <a href="#popup" class="btn btn--primary">Discover all robots</a>
+            </div>
+
+        </section>
+
+        <section class="section-stories" id="stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="images/Go-Goat.mp4" type="video/mp4">
+                    <source src="images/Go-Goat.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+            </div>
+            <h2 class="heading-secondary u-margin-bottom-medium">
+                People really love this website!
+            </h2>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="images/person3.jpeg" alt="person" class="story__image">
+                        <figcaption class="story__caption">
+                            Mary Smith
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">This website changed my life!</h3>
+                        <p>
+                        Isn't it fantastic that you can change your mind and create all these happy things? That's the way I look when I get home late; black and blue. Let's make a happy little mountain now. Let's do it again then, what the heck. Let's have a nice tree right here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="images/person1.jpeg" alt="person" class="story__image story__image--2">
+                        <figcaption class="story__caption">
+                            Jack Wilson
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">My life is completely different now.</h3>
+                        <p>
+                        We have no limits to our world. We're only limited by our imagination. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. You have to make these big decisions. See there, told you that would be easy. Absolutely no pressure. You are just a whisper floating across a mountain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-large">
+                <a href="#" class="btn-text">Read all stories</a>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <div class="row">
+                <div class="contact">
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">Contact me</h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label class="form__label" for="name">Full Name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                <label class="form__label" for="email">Email Address</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input class="form__radio-input" type="radio" id="awesome" name="marie">
+                                    <label for="awesome" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Marie is awesome
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input class="form__radio-input" type="radio" id="super-awesome" name="marie">
+                                    <label for="super-awesome" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Marie is super awesome
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn--primary">Next step </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="images/login-w-icon.png" alt="full logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Build by <a class="footer__link" href="#">Marie Pelletier</a> to practice some CSS.
+                    Inspired by online course for Advanced CSS and Sass on Udemy.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="images/space2.jpg" alt="space!" class="popup__img">
+                <img src="images/space3.jpeg" alt="space again" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a class="popup__close" href="#robots">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start shopping!</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important warning</h3>
+                <p class="popup__text">
+                I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas. I didn't ask for a completely reasonable excuse! I asked you to get busy!
+                I am the man with no name, Zapp Brannigan! You can see how I lived before I met you. Calculon is gonna kill us and it's all everybody else's fault! And until then, I can never die? Tell them I hate them.    
+                </p>
+                <a class="btn btn--primary" href="#">Click here!</a>
+            </div>
+        </div>
+    </div>
 
     </body>
 </html>

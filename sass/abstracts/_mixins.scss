@@ -5,3 +5,33 @@
     clear: both;
   } 
 }
+
+// MEDIA QUERY MANAGER
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+[1200-1800] is where our normal styles apply
+1800+ : large desktop
+
+- phone
+- tablet-port
+- tablet-land
+- big-desktop
+
+*/
+@mixin media($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {@content}; //600px
+  }
+  @if $breakpoint == tablet-port {
+    @media (max-width: 1024px) {@content}; //900px
+  }
+  @if $breakpoint == tablet-land {
+    @media (max-width: 75em) {@content}; //1200px
+  } 
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {@content}; //1800px
+  }
+
+ }
