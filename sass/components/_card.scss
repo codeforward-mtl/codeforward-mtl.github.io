@@ -2,7 +2,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 40rem;
 
   &__side {
     height: 50rem;
@@ -48,24 +48,21 @@
   // FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    height: 23rem;
+    height: 28rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      margin: -5rem; // cropping
-      margin-bottom: 0;
-      height: 28rem; // adjusting for cropping
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../images/wall-e.jpeg);      
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../images/computer2.jpg);      
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark), url(../images/r2d2.jpeg);      
+      background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark), url(../images/business.jpg);      
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../images/mimi.jpeg);      
+      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../images/casual.jpg);      
     }
   }
 
@@ -75,7 +72,7 @@
     text-transform: uppercase;
     color: white;
     position: absolute;
-    top: 17rem;
+    top: 25rem;
     right: 2rem;
     text-align: right;
   }

@@ -13,10 +13,11 @@
   }
 }
 
+
 .section-features {
-  padding: 20rem 0;
+  padding: 15rem 0 20rem 0;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba($color-primary, .7) , rgba($color-primary-dark, .7)), url(../images/space.jpg);
+  background-image: linear-gradient(to right bottom, rgba($color-primary, .7) , rgba($color-primary-dark, .7)), url(../images/computer.jpg);
   background-size: cover;
   position: relative;
   margin-top: -15rem;
@@ -33,7 +34,7 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 30rem 0 10rem 0;
+  padding: 30rem 0 30rem 0;
   margin-top: -10rem;
 
   @include media(tablet-port) {
@@ -57,7 +58,7 @@
                                      rgba(white, .8) 0%,
                                      rgba(white, .8) 50%,
                                      transparent 50%),
-                    url('../images/dinosaur.jpeg');
+                    url('../images/phone.jpg');
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .25);
@@ -66,7 +67,7 @@
     rgba(white, .8) 0%,
     rgba(white, .8) 65%,
     transparent 65%),
-url('../images/dinosaur.jpeg');
+url('../images/phone.jpg');
   }
 
   @include media(tablet-port) {
